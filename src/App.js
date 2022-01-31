@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
 import MainComponent from './component/MainComponent';
 import NavComponent from './component/NavComponent';
@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <NavComponent />
-      <MainComponent name="Wibisana" age={23}/>
+      <MainComponent name="Wibisana" />
       <BottomComponent />
     </div>
   );
