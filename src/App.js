@@ -1,23 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+import MainComponent from './component/MainComponent';
+import NavComponent from './component/NavComponent';
+import BottomComponent from './component/BottomComponent';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavComponent />
+      <MainComponent name="Wibisana" age={23}/>
+      <BottomComponent />
     </div>
   );
 }
