@@ -1,0 +1,160 @@
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p,
+form, input, div {
+  margin: 0;
+  padding: 0;
+}
+
+.jumbotron {
+  padding: 180px 0 250px 0;
+  background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20190828/pngtree-school-timetable-card-with-laptop-theme-in-background-image_307720.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.selfphoto {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.social-media {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.social-media img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.contents {
+  height: 50%;
+  margin: 0 auto;
+  justify-content: center;
+  display: flex;
+  flex: auto;
+  flex-shrink: 0;
+  flex-flow: row wrap;
+}
+
+.contents-item img {
+  width: 150px;
+  height: 150px;
+}
+
+.contents-item {
+  float: left;
+  margin-right: 40px;
+}
+
+.contents-item p {
+  font-size: 24px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.btn {
+  padding: 12px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.7;
+  border-radius: 4px;
+  text-align: center;
+  background-color: #8c98c9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.form-control {
+  margin: 5px auto;
+}
+
+.formcontact {
+    width: 500px;
+}
+
+footer {
+  margin-top: 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: #000000;
+}
+
+footer p {
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.flexul{
+  list-style: none;
+  margin: 0px;
+  padding: 60px 0px;
+  text-align: center;
+}
+
+.flex-item {
+  display: flex;
+}
+
+.flex-item li {
+  flex: auto;
+}
+
+@media (max-width: 1000px) {
+  .flex-item {
+    flex-wrap: wrap;
+  }
+  .flex-item li {
+    width: 50%;
+  }
+}
+
+@media (max-width: 670px) {
+  .flex-item {
+    flex-direction: column;
+  }
+  
+  .flex-item li {
+    margin: 0 auto;
+  }
+
+  .container {
+    padding:0;
+    margin:auto;
+  }
+
+  body {
+    padding:0;
+  }
+
+  .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom:0;
+  }
+  
+}
+
+@media screen and (max-width: 500px) {
+
+  .jumbotron {
+    width: 600px;
+  }
+  .container {
+    width: 550px;
+  }
+
+  footer {
+    width: 600px;
+  }
+}
