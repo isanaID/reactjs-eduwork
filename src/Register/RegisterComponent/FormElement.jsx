@@ -59,7 +59,7 @@ export default class FormElement extends React.Component {
     render() {
         return(
             <div className="body"><div className='bold-line'></div>
-                <div className="container">   
+                <div className="containerregis">   
                 <div className='window'>
                 <div className='overlay'></div>
                     <div className='content'>
