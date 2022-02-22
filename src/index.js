@@ -4,12 +4,14 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Register from './Register';
+import News from './news';
 
 ReactDOM.render(
   <Router>
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="/register" element={<Register />} />
+      <Route path="/news" element={<News />} />
     </Routes>
   </Router>,
   document.getElementById('root')

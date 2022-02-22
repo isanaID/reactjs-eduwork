@@ -17,6 +17,7 @@ class NavComponent extends React.Component {
               <Nav.Link href="#home">Home</Nav.Link>
               <Nav.Link href="#features">Bio</Nav.Link>
               <Nav.Link href="#pricing">Contact</Nav.Link>
+              <Nav.Link href="/register">Sign Up</Nav.Link>
             </Nav>
             </div>
             </Container>

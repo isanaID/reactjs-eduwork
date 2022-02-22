@@ -6,7 +6,9 @@ export default class Register extends React.Component {
     render() {
     return (
         <div>
+            <div className='container'>
             <FormElement />
+            </div>
         </div>
     )
 }
