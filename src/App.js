@@ -6,6 +6,7 @@ import './sass/style.scss';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Register from './Register';
 import News from './news';
+import Newsv2 from './newsv2';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/register" element={<Register />} />
         <Route path="/news" element={<News />} />
+        <Route path="/newsv2" element={<Newsv2 />} />
       </Routes>
     </Router>
     </div>
