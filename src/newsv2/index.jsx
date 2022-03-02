@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from "axios";
 import NavComponent from "../component/NavComponent";
 import { Container, Form, Card, Button } from "react-bootstrap";
+import swal from "sweetalert";
 
 function Newsv2() {
     const [news, setNews] = React.useState([]);
@@ -18,6 +19,15 @@ function Newsv2() {
         })
     }
 
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const search = e.target.elements.search.value;
+        setSearch(search);
+        if(search === "") {
+            swal("Oops!", "Please enter a search", "error");
+        }
+    }
+
     useEffect(() => {
         getNews();
     }, [search]);
@@ -30,7 +40,12 @@ function Newsv2() {
             <br />
             <br />
             <Container>
-            <Form.Control type="text" placeholder="Search" onChange={e => setSearch(e.target.value)} />
+            <Form onSubmit={this.handleSubmit}>
+                <Form.Group controlId="search">
+                    <Form.Control type="text" placeholder="search" />
+                </Form.Group>
+                    <Button type="submit" variant="primary">Search</Button>
+            </Form>
             </Container>
             <Container>
                 <div className="row  d-flex justify-content-evenly">

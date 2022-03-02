@@ -3,7 +3,8 @@ import axios from "axios";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import GetNews from "./NewsComponent/getNews";
 import NavComponent from "../component/NavComponent";
-import { Container, Form } from "react-bootstrap";
+import { Container, Form, Button } from "react-bootstrap";
+import swal from "sweetalert";
 
 export default class News extends React.Component {
     constructor(props) {
@@ -11,6 +12,15 @@ export default class News extends React.Component {
         this.state = {
             search: 'indonesia',
             articles: []
+        }
+    }
+
+    handleSubmit = (e) => {
+        e.preventDefault();
+        const search = e.target.elements.search.value;
+        this.setState({search: search});
+        if(search === "") {
+            swal("Oops!", "Please enter a search", "error");
         }
     }
 
@@ -47,7 +57,12 @@ export default class News extends React.Component {
             <br />
             <br />
             <Container>
-            <Form.Control type="text" placeholder="Search" onChange={e => this.setState({search: e.target.value})} />
+            <Form onSubmit={this.handleSubmit}>
+                <Form.Group controlId="search">
+                    <Form.Control type="text" placeholder="search" />
+                </Form.Group>
+                    <Button type="submit" variant="primary">Search</Button>
+            </Form>
             </Container>
             <Container>
                 <div className="row  d-flex justify-content-evenly">
