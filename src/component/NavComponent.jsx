@@ -16,7 +16,7 @@ class NavComponent extends React.Component {
             <Nav className="me-auto">
               <Nav.Link href="/">Home</Nav.Link>
               <Nav.Link href="/news">News</Nav.Link>
-              <Nav.Link href="/news">News v2</Nav.Link>
+              <Nav.Link href="/newsv2">News v2</Nav.Link>
               <Nav.Link href="/register">Sign Up</Nav.Link>
             </Nav>
             </div>
